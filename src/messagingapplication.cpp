@@ -275,6 +275,9 @@ void MessagingApplication::parseArgument(const QString &arg)
         if (item.first == "threadId") {
             properties["threadId"] = item.second;
         }
+        if (item.first == "dial") {
+            properties["threadId"] = item.second.toBool;
+        }
     }
 
     QQuickItem *mainView = m_view->rootObject();
